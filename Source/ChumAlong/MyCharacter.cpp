@@ -29,7 +29,7 @@ void AMyCharacter::Tick(float DeltaTime)
 
 	if (!CurrentVelocity.IsZero())
 	{
-		FVector NewLocation = GetActorLocation() + (-CurrentVelocity * DeltaTime);
+		FVector NewLocation = GetActorLocation() + (CurrentVelocity * DeltaTime);
 		SetActorLocation(NewLocation);
 	}
 
